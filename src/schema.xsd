@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+      targetNamespace="urn:X-kopr" xmlns:tns="urn:X-kopr"
+			elementFormDefault="qualified">
+
+  <xsd:element name="createUserRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="name" type="xsd:string" />
+        <xsd:element name="surname" type="xsd:string" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="createUserResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="uuid" type="xsd:string" />
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
